@@ -1,0 +1,33 @@
+# thor （targets）
+get page data from leisu.com
+
+
+# skills
+1、charome headless
+2、Selenium 
+3、python2.7
+4、pyquery
+
+
+# ref(since i am a chinese，here are some docs for chinese)
+--------------------安装教程-------------------------
+https://wangxin1248.github.io/linux/2018/09/ubuntu18.04-install-chrome-headless.html
+https://zhuanlan.zhihu.com/p/36670753
+
+
+--------------------chrome driver-------------------------
+判断最合适的驱动版本：https://chromedriver.storage.googleapis.com/LATEST_RELEASE_71.0.3578
+下载合适的驱动版本：https://chromedriver.storage.googleapis.com/index.html?path=71.0.3578.137/
+版本列表： https://sites.google.com/a/chromium.org/chromedriver/downloads
+linux-driver：  https://chromedriver.storage.googleapis.com/73.0.3683.68/chromedriver_linux64.zip
+windows-driver： https://chromedriver.storage.googleapis.com/73.0.3683.68/chromedriver_win32.zip
+
+
+--------------------使用教程-------------------------
+https://selenium-python.readthedocs.io/waits.html#explicit-waits
+https://zhuanlan.zhihu.com/p/56412464?utm_source=wechat_session&utm_medium=social&utm_oi=849568182145536000https://www.cnblogs.com/linxiyue/p/10215912.html
+https://www.jianshu.com/p/2575a8b93691
+
+
+--------------------html处理-------------------------
+https://cuiqingcai.com/2636.html
