@@ -1,4 +1,4 @@
-# thor （targets）
+# target
 get page data from https://live.leisu.com/
 
 # use：
@@ -7,7 +7,13 @@ get page data from https://live.leisu.com/
 3、chrome driver 73.0.3683.68
 4、Selenium
 5、pyquery
- 
+
+if you have any questions ,send email to:
+15261066994tel@gmail.com
+
+powered by guanrongjia at 2018/04/30
+all rights reserved
+
 
 
 # ref(since i am a chinese，here are some docs for chinese)
