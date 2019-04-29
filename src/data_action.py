@@ -14,7 +14,7 @@ def get_data(content):
         doc = pq(content)
 
     screen_view = doc('.screen-view')
-    page_data = {u'正在进行中的比赛': [], u'未开始的比赛': []}
+    page_data = {'game_in_progress': [], 'game_finished': []}
     for tr in screen_view.find('tr'):
         simple_game_data = []
         for td in pq(tr).find('td'):
@@ -28,11 +28,11 @@ def get_data(content):
                 simple_game_data.append(current_score[0].strip() if current_score else '')
 
         if len(simple_game_data) == 3:
-            page_data[u'正在进行中的比赛'].append({u'team1': simple_game_data[0],
+            page_data['game_in_progress'].append({u'team1': simple_game_data[0],
                                                    u'current_score': simple_game_data[1],
                                                    u'team2': simple_game_data[2]})
         elif len(simple_game_data) == 2:
-            page_data[u'未开始的比赛'].append({u'team1': simple_game_data[0],
+            page_data['game_finished'].append({u'team1': simple_game_data[0],
                                                u'team2': simple_game_data[1]})
     # print json.dumps(page_data, ensure_ascii=False)
     return page_data
