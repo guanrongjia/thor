@@ -6,15 +6,17 @@ from HTMLParser import HTMLParser
 from tools import smart_decode
 import json
 
+
 def get_data(content):
+    print 'start filter html content'
     content = smart_decode(content)
     try:
         doc = pq(etree.fromstring(content))
     except:
         doc = pq(content)
-
     screen_view = doc('.screen-view')
     page_data = {'game_in_progress': [], 'game_finished': []}
+    print 'filter current game data'
     for tr in screen_view.find('tr'):
         simple_game_data = []
         for td in pq(tr).find('td'):
