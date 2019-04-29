@@ -1,15 +1,17 @@
 # thor （targets）
-get page data from leisu.com
+get page data from https://live.leisu.com/
 
-
-# skills
-1、charome headless
-2、Selenium 
-3、python2.7
-4、pyquery
+# use：
+1、python2.7
+2、73.0.3683.103（正式版本） （64 位）
+3、chrome driver 73.0.3683.68
+4、Selenium
+5、pyquery
+ 
 
 
 # ref(since i am a chinese，here are some docs for chinese)
+
 --------------------安装教程-------------------------
 https://wangxin1248.github.io/linux/2018/09/ubuntu18.04-install-chrome-headless.html
 https://zhuanlan.zhihu.com/p/36670753
