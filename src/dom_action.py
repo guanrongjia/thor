@@ -23,10 +23,11 @@ def get_dom_html():
 
     print('set driver')
     if platform.system().lower() == 'windows':
-        driver_path = r'C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe'
+        driver_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'public', 'chromedriver.exe')
     else:
-        driver_path = r'/usr/program/thor/public/chromedriver'
-    print('driver path is %s' % driver_path)
+        driver_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'public', 'chromedriver')
+    print('driver path is: %s' % driver_path)
+
     driver = webdriver.Chrome(executable_path=driver_path, chrome_options=chrome_options)
     driver.maximize_window()
     try:
