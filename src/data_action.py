@@ -37,6 +37,7 @@ def get_data(content):
             page_data['game_finished'].append({u'team1': simple_game_data[0],
                                                u'team2': simple_game_data[1]})
     # print json.dumps(page_data, ensure_ascii=False)
+    print 'return page data , request has been dealed!'
     return page_data
 
 
