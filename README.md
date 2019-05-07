@@ -1,5 +1,8 @@
 # target
-get page data from https://live.leisu.com/
+get page data from https://free.leisu.com/
+you can change source url in  thor/src/dom_action.py
+line 37: base_url = "https://free.leisu.com/"
+such as https://live.leisu.com/ etc.
 
 # use：
 1、python2.7
